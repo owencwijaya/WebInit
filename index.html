@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<html>
+    <head>
+        <title>The IniTiators</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <header id = "banner">
+            <div class="typewriter">
+                <h1>The IniTiators</h1>
+              </div>
+            <p class = "fade">Solving The Digital Talent Issue</p>
+        </header>
+        
+        
+
+        <main>
+            <div>
+                <p>“The Initiator” adalah sebuah Aksi Angkatan dari INIT 2020 sebagai langkah konkret untuk memperkenalkan teknologi digital dalam rangka mendukung
+                    pertumbuhan talenta digital di Indonesia, terkhusus mahasiswa dan pelajar.</p>
+                <p>Transformasi digital global secara otomatis mendesak kebutuhan akan adanya talenta-talenta digital untuk mempermudah
+                    menyesuaikan diri dengan teknologi yang sangat cepat. Seringkali talenta ini tidak memenuhi kualifikasi yang ada, dan rendahnya keterampilan ini menjadi tantangan yang 
+                    harus dihadapi Indonesia dalam menghadapi Revolusi Industri 4.0. 
+                </p>
+                <p>
+                    Oleh karena itu, Init hadir di tengah masyarakat untuk memberikan pengetahuan umum mengenai teknologi. Init berinisiatif untuk memperkenalkan teknologi dan mendukung pertumbuhan talenta digital dalam bentuk talkshow, bootcamp, dan konten edukatif melalui media sosial.
+                </p>
+            <div id = "content">
+                <div id = "pre-event">
+                    
+                    <h1 style = "text-align: left">Pre-Event</h1>
+                    <p>Acara pada Pre-Event berupa acara yang berisi konten edukatif dan atraktif untuk mengenalkan dunia industri digital dalam 
+                        bentuk video di <em>YouTube</em> dan konten di <em>Instagram</em>. </p>
+                    <button class="accordion"><em>Lifestyle Guide</em></button>
+                    <div class="panel">
+                        <p>Berupa rekomendasi film bertema <em>information technology</em>, rekomendasi buku, <em>playlist</em> lagu dan olahraga.<br></p>
+                    </div>
+
+                    <button class="accordion"><em>Hardskills Media</em></button>
+                    <div class="panel">
+                        <ul>
+                            <li><em>Podcast: First Step to Become a Programmer</em></li>
+                            <li><em>Instagram: Study Resources Recommendation</em></li>
+                            <li><em>Reels: Basic Terms in Programming</em></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion"><em>Softskills Media</em></button>
+                    <div class="panel">
+                        <p><em>YouTube: How to "Survive" in the Online University Life</em>></p>
+                    </div>
+                </div>
+
+                <div id = "bootcamp">
+                    
+                    <h1 style = "text-align: left">Programming Bootcamp: Intro to Python</h1>
+                    <p>Acara pelatihan berbentuk bootcamp dengan total 3 pertemuan. Untuk setiap pertemuan, terdapat 2 jam untuk mengenalkan bahasa pemrograman Python kepada masyarakat, 
+                        terutama mahasiswa TPB untuk mempersiapkan mata kuliah Pengenalan Komputasi.</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+
+        </main>
+
+        <footer>
+            <p>2021, Angkatan Init - SPARTA HMIF</p>
+        </footer>
+    </body>
+
+    <script>
+        var accordion = document.getElementsByClassName("accordion");;
+        var em;
+
+        for (em = 0; em < accordion.length; em++){
+            accordion[em].addEventListener("click", function(){
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+
+                if (panel.style.display === "block"){
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        
+    </script>
+</html>
