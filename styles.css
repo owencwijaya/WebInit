@@ -24,10 +24,6 @@
         padding-right: 5% !important;
     }
 
-
-
-
-
 }
 html, body{
    
@@ -170,10 +166,47 @@ main{
 
 footer{
     background-color: #f5b042;
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 10px;
     text-align: center;
     font-family: "Poppins";
     margin-top: 30px;
 }
+
+.sticky-header{
+    display: inline;
+    background-color: #f5b042;
+    z-index: 1;
+    min-width: 100%;
+    height: 8vh;
+    position: fixed;
+    padding-top: 35px;
+
+}
+
+#inline-list ul{
+    display: table;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+}
+
+#inline-list ul li{
+    display: inline;
+    margin-right: 4vh;
+    margin-left: 4vh;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+.thumbnail{
+    position: absolute;
+    max-width: 3.5vh;
+
+}
+.thumbnail:hover {
+    min-width:5vh;
+    min-height:5vh;
+    position: relative;
+    margin-left: 5vh;
+}
+
