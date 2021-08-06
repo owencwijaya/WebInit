@@ -26,15 +26,51 @@
 
     #inline-list ul li{
         display: inline;
+        margin-right: 4vh !important;
+        margin-left: 4vh !important;
         font-family: "Poppins";
         font-weight: bold;
     }
 
-    #inline-list  ul{
-        margin-right: 9vh !important;
+    #inline-list{
+        display: none;
+    }
+    #dropdown{
+        display: block;
+        position: absolute;
+        background-color: white;
+        z-index: 99;
+    }
+    .dropbutton{
+        visibility: visible !important;
+        animation: 2s fadeIn !important;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        visibility: visible !important;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
 
+    .timeline-box{
+        width: 30vh !important;
+        margin: 5px !important;
+    }
+    
+    .timeline-span{
+        font-size: 15px !important;
+    }
+    p{
+        font-size: 12px;
+    }
 }
 html, body{
    
@@ -92,7 +128,7 @@ main{
 #content{
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 50px;
+    padding: 20px;
 }
 
 .accordion{
@@ -193,9 +229,10 @@ footer{
     height: 8vh;
     position: fixed;
     padding-top: 35px;
-    overflow: hidden;
 
 }
+
+
 
 #inline-list ul{
     display: table;
@@ -208,17 +245,125 @@ footer{
     margin-right: 4vh;
     margin-left: 4vh;
     font-family: "Poppins";
+    font-weight: normal;
+}
+
+#inline-list ul li a{
+    color: black;
+}
+
+#inline-list ul li a:hover{
+    color: white;
+}
+
+.dropbutton{
+    background-color: #f5b042;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Poppins";
+    margin-bottom: 0px !important;
+    visibility: hidden;
+    float: left;
+    margin-top: 10vh;
+    margin-right: 1vh;
+    margin-left: 80%;
+    min-width: 8vh;
+    min-height: 8vh;
+}
+
+.dropbutton:hover, .dropbutton:focus{
+    background-color: #b97a13;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 6vh;
+    border-radius: 10px;
+    z-index: 1;
+    float: right;
+    margin-top: 20vh;
+    margin-left: 65%;
+}
+
+.dropdown-content a{
+    color: black;
+    font-family: "Poppins";
+    display: block;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 80%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -3vh;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+.show{
+    display: block;
+}
+
+
+
+
+#timeline_bar{
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    background-color:black;
+    border-radius:10px;
+    margin-left: 30vh;
+}
+.timeline-box{
+    color: black;
+    background-color: #f5b042;
+    width: 60vh;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#timeline .timeline-box:nth-child(even){
+    float: right;
+    margin-left: 300px;
+    margin-right: 8vw;
+}
+
+#timeline .timeline-box:nth-child(odd){
+    float: left;
+    margin-right: 300px;
+    margin-left: 8vw
+}
+
+.timeline-span{
+    font-size: 20px;
     font-weight: bold;
 }
-.thumbnail{
-    position: absolute;
-    max-width: 3.5vh;
 
+#timeline{
+    margin-bottom: 50vh !important;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
-.thumbnail:hover {
-    min-width:5vh;
-    min-height:5vh;
-    position: relative;
-    margin-left: 5vh;
-}
-

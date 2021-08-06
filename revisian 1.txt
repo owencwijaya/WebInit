@@ -1,0 +1,36 @@
+-overall udah bagus, udah rapi, tapi perlu dikenalin tentang si init 
+(udah dijawab, ada laman about us)
+-href di pre eventnya kalo udah ada link (nunggu)
+-poster acara di web (nunggu)
+-guideline pendaftaran dan link form pendaftaran (nunggu, nanti pake accordion box aja)
+-notul di setiap kegiatan akan dishare dan ditarok di web (aman, nanti disatuin di laman photos & docs)
+-recording akan ada di web (mirip ama href)
+
+-galeri acara kayak di sparta (nunggu foto)
+-link sosmed (aman, di header udah ada)
+-timeline (nunggu ada timeline konkret)
+-jingle (utk video) (paling tarok embed?)
+-achievements (di akhir banget, peserta webinar/bootcamp akan dicatet dan ditampilin,
+ mirip achievement box di steam, flexbox?)
+-medpar (di footer, nanti bisa)
+
+daftar kerjaan?: (inisiatip siapa aja)
+1. bikin nav jadi dropdown untuk di hape (malem ini coba newo gas)
+2. timeline (css bole)
+3. template kodingan buat slideshow
+4. ngeupdate (ada yang masuk dari kibar (link/poster) langsung ditambahin)
+
+timeline:
+1. tanggal 9 itu udah harus kelar dan kalo bisa selurus dengan desain
+2. sampe acara kelar itu kita update berkala
+
+tanggal:
+6 - dropdown kelar
+7 - day 8 + audiensi malem 
+8 - finalisasi, selarasin dengan desain
+9 - deploy? (theinitiators.netlify.app) 
+
+desain:
+-mau ada color palette, logo init, sama font untuk judul
+
+hosting: pake punya ave, dicoba dulu, kalo gabisa beli dah mo gimana

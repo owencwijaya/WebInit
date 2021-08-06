@@ -4,22 +4,38 @@
     <head>
         <title>The IniTiators</title>
         <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
 
     <body>
         <div id = "inline-list" class = "sticky-header fade">
             <ul>
-                <li><a href = "index.html"><img class = "thumbnail" src = "assets/home.png"></a></li>
-                <li><a href = "gallery.html"><img  class = "thumbnail"src = "assets/gallery.png"></a></li>
-                <li><a href = "about.html"><img  class = "thumbnail"src = "assets/about.png"></a></li>
-                <li><a href = "https://instagram.com"><img  class = "thumbnail"src = "assets/ig.png"></a></li>
-                <li><a href = "https://youtube.com"><img  class = "thumbnail"src = "assets/yt.png"></a></li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gallery.html">Photos</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "https://instagram.com/theinitiator21">Instagram</a></li>
+                <li><a href = "https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ">YouTube</a></li>
             </ul>
         </div>
+
+        <button onclick = "testFunc()" class = "dropbutton fa fa-home"></button>
+                <div id = "menuDropdown" class = "dropdown-content">
+                    <ul>
+                        <a href = "index.html">Home</a>
+                        <a href = "gallery.html">Photos</a>
+                        <a href = "about.html">About</a>
+                        <a href = "https://www.instagram.com/theinitiator21/">Instagram</a>
+                        <a href = "https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ">YouTube</a>
+                    </ul>
+                </div>
+        
+        
         <header id = "banner">
             
             <div class="typewriter">
-                <h1>The IniTiators</h1>
+                <h1 style = "font-weight: normal; margin-bottom: -100px;">THE<span style = "letter-spacing: -15px">-----------</span></h1> 
+                <h1 style = "font-weight: normal"><span style = "font-weight: bold">INIT</span>IATORS</h1>
               </div>
             <p class = "fade">Solving The Digital Talent Issue</p>
             <img src = "assets/point-down.png" class = "fade icon">
@@ -34,10 +50,40 @@
                 <p>
                    Init hadir di tengah masyarakat untuk memberikan pengetahuan umum mengenai teknologi. Init berinisiatif untuk memperkenalkan teknologi dan mendukung pertumbuhan talenta digital dalam bentuk talkshow, bootcamp, dan konten edukatif melalui media sosial.
                 </p>
+                <h1 style = "font-weight: bold">Timeline</h1>
+                <div id = "timeline">
+                    <div class = "timeline-box">
+                        <span class = "timeline-span">9 - 12 Agustus</span> <br>Pre-Event
+                    </div>
+
+                    <div class = "timeline-box">
+                        <span class = "timeline-span">13 Agustus</span> <br>Day 1 Bootcamp
+                    </div>
+
+                    <div class = "timeline-box">
+                        <span class = "timeline-span">14 Agustus</span> <br>Main Event
+                    </div>
+
+                    <div class = "timeline-box">
+                        <span class = "timeline-span">15 Agustus</span> <br>Day 2 Bootcamp
+                    </div>
+
+                    <div class = "timeline-box">
+                        <span class = "timeline-span">16 Agustus</span> <br>Day 3 Bootcamp
+                    </div>
+                </div>
+                        
+                    
+               
+            </div>
             <div id = "content">
+                <div id = "menggokil" style = "padding-top: 20px;">
+                    <h1 style = "margin-top: 20px;">Events</h1>
+                </div>
+                
                 <div id = "pre-event">
                     
-                    <h1 style = "text-align: left">Pre-Event</h1>
+                    <h2 style = "text-align: left">Pre-Event</h2>
                     <p>Acara pada Pre-Event berupa acara yang berisi konten edukatif dan atraktif untuk mengenalkan dunia industri digital dalam 
                         bentuk video di <em>YouTube</em> dan konten di <em>Instagram</em>. </p>
                     <button class="accordion"><em>Lifestyle Guide</em></button>
@@ -62,13 +108,13 @@
 
                 <div id = "bootcamp">
                     
-                    <h1 style = "text-align: left">Programming Bootcamp: Intro to Python</h1>
+                    <h2 style = "text-align: left">Programming Bootcamp: Intro to Python</h2>
                     <p>Acara pelatihan berbentuk bootcamp dengan total 3 pertemuan. Untuk setiap pertemuan, terdapat 2 jam untuk mengenalkan bahasa pemrograman Python kepada masyarakat, 
                         terutama mahasiswa TPB untuk mempersiapkan mata kuliah Pengenalan Komputasi.</p>
                     </div>
                 </div>
             </div>
-            
+
     
 
         </main>
@@ -101,6 +147,22 @@
                 }
             });
         }
-        
+
+        function testFunc(){
+            document.getElementById("menuDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event){
+            if (!event.target.matches('.dropbutton')){
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++){
+                    var openDropDown = dropdowns[i];
+                    if (openDropDown.classList.contains('show')){
+                        openDropDown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </html>
