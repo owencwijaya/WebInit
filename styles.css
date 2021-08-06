@@ -26,8 +26,6 @@
 
     #inline-list ul li{
         display: inline;
-        margin-right: 4vh !important;
-        margin-left: 4vh !important;
         font-family: "Poppins";
         font-weight: bold;
     }
