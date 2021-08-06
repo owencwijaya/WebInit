@@ -24,6 +24,19 @@
         padding-right: 5% !important;
     }
 
+    #inline-list ul li{
+        display: inline;
+        margin-right: 4vh !important;
+        margin-left: 4vh !important;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+
+    #inline-list  ul{
+        margin-right: 10vh !important;
+    }
+
+
 }
 html, body{
    
