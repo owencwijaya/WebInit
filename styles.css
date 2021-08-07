@@ -143,17 +143,21 @@ header p{
     padding-bottom: 30vh;
 }
 main{
-    text-align: center;
+    text-align: justify;
     font-family: Poppins;
     margin-top: 50px;
     padding-left: 15%;
     padding-right: 15%;
 }
 
+
 #content{
     padding-left: 5%;
     padding-right: 5%;
     padding: 20px;
+    margin: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .accordion{
@@ -284,6 +288,7 @@ footer{
 #inline-list ul li a:hover{
     color: rgb(116, 116, 116);
     font-weight: bold;
+    transition: all ease 0.3s;
 }
 
 .dropbutton{
@@ -368,4 +373,11 @@ em{
 
 .socmed-images:hover{
     color:#777
+}
+
+
+.about-initiators{
+    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
