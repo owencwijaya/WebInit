@@ -11,6 +11,9 @@
         
     }
 
+    #hiddensprout{
+        visibility: visible;
+    }
     header h1{
         font-size: 40px !important;
         margin-bottom: 0px !important;
@@ -72,6 +75,20 @@
     p{
         font-size: 12px;
     }
+
+    .typewriter h1{
+        margin-top: -2vh !important;
+    }
+
+    .panel ul li{
+        font-size: 14px !important;
+        margin-bottom: 2vh !important;
+    }
+
+    #sprout{
+        letter-spacing: -6px !important;
+    }
+
 }
 html, body{
    
@@ -247,10 +264,12 @@ footer{
     margin-left: 4vh;
     font-family: "Poppins";
     font-weight: normal;
+    
 }
 
 #inline-list ul li a{
     color: black;
+    text-decoration: none;
 }
 
 #inline-list ul li a:hover{
@@ -308,12 +327,15 @@ footer{
     font-weight: bold;
     text-align: center;
     margin-left: -3vh;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
+    text-decoration: none;
 }
 
 
-
+#sprout{
+    letter-spacing: -13px;
+}
 .show{
     display: block;
 }
@@ -368,3 +390,8 @@ footer{
     padding-right: 20px;
     padding-bottom: 30px;
 }
+
+em{
+    font-weight: bold;
+}
+
