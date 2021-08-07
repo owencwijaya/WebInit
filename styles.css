@@ -282,7 +282,8 @@ footer{
 }
 
 #inline-list ul li a:hover{
-    color: white;
+    color: rgb(116, 116, 116);
+    font-weight: bold;
 }
 
 .dropbutton{
