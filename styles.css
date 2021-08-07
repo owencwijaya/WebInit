@@ -8,7 +8,8 @@
         background-size: 300% 100%!important;
         padding-top: 50vh !important;
         padding-bottom: 10vh !important;
-        
+        background: rgb(79,145,202) !important;
+        background: linear-gradient(4deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%) !important;
     }
 
     #hiddensprout{
@@ -89,6 +90,12 @@
         letter-spacing: -6px !important;
     }
 
+    .timeline{
+        max-width: 100vw !important;
+    }
+
+    
+
 }
 html, body{
    
@@ -123,8 +130,8 @@ header p{
 
 
 #banner{
-    background-image: linear-gradient(93deg, rgba(255,153,0,0.1) 0%, rgba(255,244,118,0.1) 48%, rgba(255,235,0,0.1) 100%),
-    url('assets/banner.jpg');
+    background: rgb(79,145,202);
+    background: linear-gradient(93deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%);
     height: 60vh;
     background-size: 100%;
     background-position: center;
@@ -165,14 +172,15 @@ main{
 }
 
 .active, .accordion:hover{
-    background-color: rgb(155, 155, 155);
+    background: rgb(73,213,187);
+background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100%);
 }
 
 .panel{
     padding: 0 20px;
     float: center;
     max-height: 0;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(223, 222, 222);
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -230,7 +238,8 @@ main{
 }
 
 footer{
-    background-color: #f5b042;
+    background: rgb(79,145,202);
+    background: linear-gradient(93deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%);
     color: black;
     font-weight: bold;
     padding: 10px;
@@ -241,7 +250,7 @@ footer{
 
 .sticky-header{
     display: inline;
-    background-color: #f5b042;
+    background-color:white;
     z-index: 1;
     min-width: 100%;
     height: 8vh;
@@ -277,7 +286,7 @@ footer{
 }
 
 .dropbutton{
-    background-color: #f5b042;
+    background-color: white;
     color: white;
     padding: 10px;
     font-size: 20px;
@@ -296,7 +305,7 @@ footer{
 }
 
 .dropbutton:hover, .dropbutton:focus{
-    background-color: #b97a13;
+    background-color: #c2c2c2;
 }
 
 .dropdown{
@@ -340,58 +349,14 @@ footer{
     display: block;
 }
 
-
-
-
-#timeline_bar{
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 10px;
-    background-color:black;
-    border-radius:10px;
-    margin-left: 30vh;
+.timeline{
+    max-width: 50vw;
 }
-.timeline-box{
-    color: black;
-    background-color: #f5b042;
-    width: 60vh;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-#timeline .timeline-box:nth-child(even){
-    float: right;
-    margin-left: 300px;
-    margin-right: 8vw;
-}
-
-#timeline .timeline-box:nth-child(odd){
-    float: left;
-    margin-right: 300px;
-    margin-left: 8vw
-}
-
-.timeline-span{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#timeline{
-    margin-bottom: 50vh !important;
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-}
-
 em{
     font-weight: bold;
+}
+
+.fa-home{
+    color: black;
 }
 
