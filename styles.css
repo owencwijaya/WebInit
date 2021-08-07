@@ -240,7 +240,7 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
 footer{
     background: rgb(79,145,202);
     background: linear-gradient(93deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%);
-    color: black;
+    color: white;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -361,3 +361,11 @@ em{
     color: black;
 }
 
+.socmed-images{
+    display: inline;
+    margin: 1vw;
+}
+
+.socmed-images:hover{
+    color:#777
+}
