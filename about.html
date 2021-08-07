@@ -1,66 +1,78 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+/>
 <html>
-    <head>
-        <title>The IniTiators</title>
-        <link rel = "stylesheet" href = "styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+  <head>
+    <title>The IniTiators</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
 
-    <body>
-        <div id = "inline-list" class = "sticky-header fade">
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "gallery.html">Photos</a></li>
-                <li><a href = "about.html">About</a></li>
-                <li><a href = "https://instagram.com/theinitiator21">Instagram</a></li>
-                <li><a href = "https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ">YouTube</a></li>
-            </ul>
-        </div>
+  <body>
+    <div id="inline-list" class="sticky-header fade">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://instagram.com/theinitiator21">Instagram</a></li>
+        <li>
+          <a href="https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ"
+            >YouTube</a
+          >
+        </li>
+      </ul>
+    </div>
 
-        <button onclick = "testFunc()" class = "dropbutton fa fa-home"></button>
-                <div id = "menuDropdown" class = "dropdown-content">
-                    <ul>
-                        <a href = "index.html">Home</a>
-                        <a href = "gallery.html">Photos</a>
-                        <a href = "about.html">About</a>
-                        <a href = "https://www.instagram.com/theinitiator21/">Instagram</a>
-                        <a href = "https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ">YouTube</a>
-                    </ul>
-                </div>
-        <header id = "banner">
-            
-            <div class="typewriter">
-                <h1 style = "font-weight: normal">About Us, Init</h1>
-              </div>
-            <img src = "assets/point-down.png" class = "fade icon">
-        </header>
+    <button onclick="testFunc()" class="dropbutton fa fa-home"></button>
+    <div id="menuDropdown" class="dropdown-content">
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Photos</a>
+        <a href="about.html">About</a>
+        <a href="https://www.instagram.com/theinitiator21/">Instagram</a>
+        <a href="https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ"
+          >YouTube</a
+        >
+      </ul>
+    </div>
+    <header id="banner">
+      <div class="typewriter">
+        <h1 style="font-weight: normal">About Us, Init</h1>
+      </div>
+      <img src="assets/point-down.png" class="fade icon" />
+    </header>
 
-        <main>
-            <h1>Coming Soon! Stay Tuned!</h1>
-        </main>
+    <main>
+      <h1>Coming Soon! Stay Tuned!</h1>
+    </main>
 
-        <footer>
-            <p>2021, Angkatan Init - SPARTA HMIF</p>
-        </footer>
-    </body>
+    <footer>
+      <p>2021, Angkatan Init - SPARTA HMIF</p>
+    </footer>
+  </body>
 
-    <script>
-        function testFunc(){
-            document.getElementById("menuDropdown").classList.toggle("show");
+  <script>
+    function testFunc() {
+      document.getElementById("menuDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropbutton")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropDown = dropdowns[i];
+          if (openDropDown.classList.contains("show")) {
+            openDropDown.classList.remove("show");
+          }
         }
-
-        window.onclick = function(event){
-            if (!event.target.matches('.dropbutton')){
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++){
-                    var openDropDown = dropdowns[i];
-                    if (openDropDown.classList.contains('show')){
-                        openDropDown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+      }
+    };
+  </script>
 </html>
