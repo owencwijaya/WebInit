@@ -415,6 +415,7 @@ em {
 }
 
 .socmed-images {
+  cursor: pointer;
   display: inline;
   margin: 1vw;
 }
