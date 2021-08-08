@@ -49,7 +49,6 @@
   }
   .dropbutton {
     visibility: visible !important;
-    animation: 4s fadeIn forwards !important;
   }
 
   @keyframes fadeIn {
