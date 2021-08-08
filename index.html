@@ -14,7 +14,7 @@
             <img id = "logo-init" src = "assets/logo_init.png">
             <ul>
 
-                <li><a href = "index.html">Home</a></li>
+                <li><a class = "selected" href = "index.html">Home</a></li>
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "gallery.html">Photos</a></li>
                 <li><a class = "btn-toggle"><i class = "fa fa-moon-o"></i></a></li>
@@ -59,10 +59,8 @@
 
                 </div>
                 
-                <h1 style="text-align: center;" style = "font-weight: bold">Timeline</h1>
-                <div style = "background-color: white; padding: 20px; border-radius: 20px" id = "timeline" style="text-align: center;">
-                    <img style = "margin-left: 10vw" class = "timeline-pic" src = "assets/Timeline.png">
-                </div>
+            <h1 style="text-align: center;" style = "font-weight: bold">Timeline</h1>
+            <div style = "padding: 20px" id = "timeline" style="text-align: center;"></div>
                     
                
             </div>
@@ -245,7 +243,7 @@
 
         const btn = document.querySelector('.btn-toggle');
         btn.addEventListener('click', function() {
-            document.body.classList.toggle('dark-theme');  
+            document.body.classList.toggle('dark-theme'); 
         })
     </script>
 </html>

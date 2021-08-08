@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200&display=swap');
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     #banner{
         margin-top: -50px !important;
         height: 50vh !important;
@@ -96,10 +96,13 @@
         padding-bottom: 6vw !important;
     }
 
-    .timeline-pic{
-        margin-left: -5vw !important;
-        max-width: 90vw !important;
+    #timeline{
+        min-height: 25vh !important;
+        min-width: 10vh !important;
     }
+    
+
+    
 
     
 
@@ -134,7 +137,7 @@ header h1{
 }
 
 @keyframes changeTextColor{
-    from{color: rgb(22, 52, 150)};
+    from{color: #2c3c6d};
     to {color: white};
 }
 header p{
@@ -301,7 +304,7 @@ footer{
 
 #inline-list ul{
     display: table;
-    margin-left: 70vw;
+    margin-left: 55vw;
     margin-top: 2.5vh;
     padding-bottom: 2.5vh;
 }
@@ -396,9 +399,7 @@ footer{
     display: block;
 }
 
-.timeline-pic{
-    max-width: 50vw;
-}
+
 em{
     font-weight: bold;
 }
@@ -472,4 +473,33 @@ body.dark-theme .dropbutton{
 body.dark-theme #menggokil-button{
     background-color: #0c2b64f1;
     color: white;
+}
+
+#timeline{
+    background-image: url('assets/Timeline.png');
+    min-height: 56vh;
+    max-height: 56vh;
+    min-width: 70vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 10vw !important;
+
+}
+
+body.dark-theme #timeline{
+    background-image: url('assets/Timeline2.png')
+}
+
+.selected{
+    border-bottom: 5px solid black !important;
+    padding-bottom: 1vh !important;
+}
+
+.selected:hover{
+    font-weight: bold;
+    color: rgb(116, 116, 116);
+}
+
+body.dark-theme .selected{
+    border-bottom: 5px solid white !important;
 }
