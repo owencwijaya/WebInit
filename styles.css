@@ -59,7 +59,6 @@
             opacity: 0;
         }
         100% {
-            visibility: visible;
             opacity: 1;
         }
     }
@@ -94,6 +93,14 @@
         max-width: 95vw !important;
     }
 
+    .panel ul{
+        float: left !important;
+        margin-bottom: -3vw !important;
+    }
+    .panel{
+        padding-bottom: 6vw !important;
+    }
+
     
 
 }
@@ -122,6 +129,13 @@ header h1{
     margin-bottom: -20px;
     font-weight: bold;
     z-index: 1;
+    animation: changeTextColor 2s backwards ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes changeTextColor{
+    from{color: rgb(22, 52, 150)};
+    to {color: white};
 }
 header p{
     font-size: 20px;
@@ -130,8 +144,6 @@ header p{
 
 
 #banner{
-    background: rgb(79,145,202);
-    background: linear-gradient(93deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%);
     height: 60vh;
     background-size: 100%;
     background-position: center;
@@ -141,6 +153,13 @@ header p{
     background-repeat: no-repeat;
     padding-top: 30vh;
     padding-bottom: 30vh;
+    background: linear-gradient(4deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%);
+}
+
+
+@keyframes changeColor{
+    from {opacity: 1}
+    to {opacity: 0}
 }
 main{
     text-align: justify;
@@ -158,7 +177,9 @@ main{
 }
 
 .accordion{
-    background-color: white;
+    background-color: rgb(224, 223, 223);
+    border-radius: 3px;
+    margin: 3px;
     color: black;
     cursor: pointer;
     width: 100%;
@@ -179,6 +200,7 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
 
 .panel{
     padding: 0 20px;
+    border-radius: 3px;
     float: center;
     max-height: 0;
     background-color: rgb(223, 222, 222);
@@ -200,7 +222,6 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
   }
 
   .typewriter {
-
     overflow: hidden;
     white-space: nowrap; 
     border-right: .15em solid white;
@@ -210,6 +231,17 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
+
+.bg-white{
+    animation: changeColor 2s forwards;
+    animation-delay: 2s;
+    background-color: white;
+    min-height: 100vh;
+    margin-top: -50vh;
+    z-index: 1 !important;
+}
+
+
   
 
   @keyframes typing {
@@ -260,12 +292,19 @@ footer{
 
 }
 
-
+#logo-init{
+    max-width: 2.5vw;
+    position: absolute;
+    margin-right: 40vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
 
 #inline-list ul{
     display: table;
-    margin: 0 auto;
+    margin-left: 70vw;
     margin-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
 
 #inline-list ul li{
@@ -274,7 +313,7 @@ footer{
     margin-left: 4vh;
     font-family: "Poppins";
     font-weight: normal;
-    
+    padding-bottom: 2.5vh;
 }
 
 #inline-list ul li a{
@@ -372,3 +411,6 @@ em{
     color:#777
 }
 
+i{
+    font-weight: bold;
+}
