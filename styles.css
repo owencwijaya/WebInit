@@ -311,15 +311,15 @@ footer {
 
 #inline-list ul {
   display: table;
-  margin-left: 70vw;
+  margin-left: 65vw;
   margin-top: 2.5vh;
   padding-bottom: 2.5vh;
 }
 
 #inline-list ul li {
   display: inline;
-  margin-right: 4vh;
-  margin-left: 4vh;
+  margin-right: 2vh;
+  margin-left: 2vh;
   font-family: "Poppins";
   font-weight: normal;
   padding-bottom: 2.5vh;
@@ -501,7 +501,6 @@ body.dark-theme #timeline {
 
 .selected {
   border-bottom: 5px solid black !important;
-  padding-bottom: 1vh !important;
 }
 
 .selected:hover {
