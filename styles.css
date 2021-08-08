@@ -49,6 +49,7 @@
   }
   .dropbutton {
     visibility: visible !important;
+    animation: 4s fadeIn forwards !important;
   }
 
   @keyframes fadeIn {
@@ -407,7 +408,7 @@ footer {
   min-width: 8vh;
   min-height: 8vh;
   visibility: hidden;
-  animation: 4s fadeIn forwards;
+
 
 }
 
