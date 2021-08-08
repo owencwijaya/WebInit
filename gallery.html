@@ -9,38 +9,42 @@
         
     </head>
 
-    <body>
-        <body class="dark-theme || light-theme">
-            <div id = "inline-list" class = "sticky-header fade">
-                <img id = "logo-init" src = "assets/logo_init.png">
-                <ul>
-    
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "gallery.html">Photos</a></li>
-                    <li><a class = "btn-toggle"><i class = "fa fa-moon-o"></i></a></li>
-                </ul>
-                
-    
-                
+    <body class="">
+        <div id = "inline-list" class = "sticky-header fade">
+            <img id = "logo-init" src = "assets/logo_init.png">
+            <ul>
+
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "gallery.html">Photos</a></li>
+                <li><a class = "btn-toggle"><i class = "fa fa-moon-o"></i></a></li>
+            </ul>
+        
+        </div>
+       
+        <button onclick = "testFunc()" class = "dropbutton fa fa-home fa-2x"></button>
+                <div id = "menuDropdown" class = "dropdown-content">
+                    <ul>
+                        <a href = "index.html">Home</a>
+                        <a href = "about.html">About</a>
+                        <a href = "gallery.html">Photos</a>
+                    </ul>
+                </div>
+                <button class = "dropbutton btn-toggle fa fa-moon-o fa-2x" id = "menggokil-button" onclick = "document.body.classList.toggle('dark-theme')"style = "margin-top: 2vh;"></button>
+
+        
+        
+        
+        <header id = "banner">
+            <div class="typewriter">
+                <h1 style = "font-weight: normal; margin-bottom: -100px; letter-spacing: 0px;">Gallery</h1> 
             </div>
             
-            <button onclick = "testFunc()" class = "dropbutton fa fa-home fa-2x"></button>
-                    <div id = "menuDropdown" class = "dropdown-content">
-                        <ul>
-                            <a href = "index.html">Home</a>
-                            <a href = "about.html">About</a>
-                            <a href = "gallery.html">Photos</a>
-                        </ul>
-                    </div>
-            <button class = "dropbutton btn-toggle fa fa-moon-o fa-2x" style = "margin-top: 2vh;"></button>
-        <header id = "banner">
+            <p class = "fade">Solving The Digital Talent Issues</p>
             
-            <div class="typewriter">
-                <h1 style = "font-weight: normal">Photos & Docs</h1>
-              </div>
-            <img src = "assets/point-down.png" class = "fade icon">
+            <i class = "fade icon fa fa-arrow-circle-down fa-3x"></i>
         </header>
+        
 
         <main>
             <h1 style="text-align:center">Coming Soon! Stay tuned!</h1>

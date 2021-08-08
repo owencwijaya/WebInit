@@ -8,8 +8,6 @@
         background-size: 300% 100%!important;
         padding-top: 50vh !important;
         padding-bottom: 10vh !important;
-        background: rgb(79,145,202) !important;
-        background: linear-gradient(4deg, rgba(79,145,202,1) 0%, rgba(73,213,187,1) 100%) !important;
     }
 
     #hiddensprout{
@@ -48,11 +46,7 @@
     }
     .dropbutton{
         visibility: visible !important;
-        animation: 2s fadeIn !important;
-        animation-fill-mode: forwards;
-        animation-delay: 2s !important;
-        visibility: visible !important;
-        display: inline;
+
     }
 
     @keyframes fadeIn {
@@ -104,7 +98,7 @@
 
     .timeline-pic{
         margin-left: -5vw !important;
-        max-width: 95vw !important;
+        max-width: 90vw !important;
     }
 
     
@@ -184,7 +178,7 @@ main{
 
 .accordion{
     background-color: rgb(224, 223, 223);
-    border-radius: 3px;
+    border-radius: 20px;
     margin: 3px;
     color: black;
     cursor: pointer;
@@ -206,9 +200,10 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
 
 .panel{
     padding: 0 20px;
-    border-radius: 3px;
+    border-radius: 10px;
     float: center;
     max-height: 0;
+    margin: 10px;
     background-color: rgb(223, 222, 222);
     display: none;
     overflow: hidden;
@@ -345,11 +340,17 @@ footer{
     margin-bottom: 0px !important;
     float: left;
     margin-top: 10vh;
-    margin-right: 1vh;
-    margin-left: 80%;
+    margin-left: 10vw;
     min-width: 8vh;
     min-height: 8vh;
     visibility: hidden;
+}
+
+#menggokil-button{
+    color: black;
+    float: right;
+    margin-right: 10vw;
+    margin-top: 10vh !important;
 }
 
 .dropbutton:hover, .dropbutton:focus{
@@ -370,7 +371,7 @@ footer{
     z-index: 1;
     float: right;
     margin-top: 20vh;
-    margin-left: 65%;
+    margin-left: 10vw;
 }
 
 .dropdown-content a{
@@ -426,7 +427,7 @@ body.dark-theme {
     background: #02112cf1;
 }
 body.dark-theme a {
-    color: #809fff;
+    color: #2c3c6d;
 }
 
 body.dark-theme footer{
@@ -457,6 +458,22 @@ body.dark-theme #inline-list ul li a{
     color: white;
 }
 
-body.dark-theme #typewriter{
+body.dark-theme #typewriter h1{
     color: blue;
+}
+
+body.dark-theme .accordion{
+    color: white;
+    background-color:#0c2b64f1;
+}
+
+body.dark-theme .dropbutton{
+    background-color: #0c2b64f1;
+    color: white;
+}
+
+
+body.dark-theme #menggokil-button{
+    background-color: #0c2b64f1;
+    color: white;
 }
