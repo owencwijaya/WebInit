@@ -243,8 +243,6 @@ background: linear-gradient(90deg, rgba(73,213,187,1) 0%, rgba(79,145,202,1) 100
 }
 
 
-  
-
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -303,7 +301,7 @@ footer{
 
 #inline-list ul{
     display: table;
-    margin-left: 60vw;
+    margin-left: 55vw;
     margin-top: 2.5vh;
     padding-bottom: 2.5vh;
 }
@@ -458,9 +456,7 @@ body.dark-theme #inline-list ul li a{
     color: white;
 }
 
-body.dark-theme #typewriter h1{
-    color: blue;
-}
+
 
 body.dark-theme .accordion{
     color: white;
