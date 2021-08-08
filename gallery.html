@@ -10,23 +10,30 @@
     </head>
 
     <body>
-        <div id = "inline-list" class = "sticky-header fade">
-            <img id = "logo-init" src = "assets/logo_init.ico">
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "about.html">About</a></li>
-                <li><a href = "gallery.html">Photos</a></li>
-            </ul>
-        </div>
-
-        <button onclick = "testFunc()" class = "dropbutton fa fa-home fa-2x"></button>
-                <div id = "menuDropdown" class = "dropdown-content">
-                    <ul>
-                        <a href = "index.html">Home</a>
-                        <a href = "about.html">About</a>
-                        <a href = "gallery.html">Photos</a>
-                    </ul>
-                </div>
+        <body class="dark-theme || light-theme">
+            <div id = "inline-list" class = "sticky-header fade">
+                <img id = "logo-init" src = "assets/logo_init.png">
+                <ul>
+    
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "gallery.html">Photos</a></li>
+                    <li><a class = "btn-toggle"><i class = "fa fa-moon-o"></i></a></li>
+                </ul>
+                
+    
+                
+            </div>
+            
+            <button onclick = "testFunc()" class = "dropbutton fa fa-home fa-2x"></button>
+                    <div id = "menuDropdown" class = "dropdown-content">
+                        <ul>
+                            <a href = "index.html">Home</a>
+                            <a href = "about.html">About</a>
+                            <a href = "gallery.html">Photos</a>
+                        </ul>
+                    </div>
+            <button class = "dropbutton btn-toggle fa fa-moon-o fa-2x" style = "margin-top: 2vh;"></button>
         <header id = "banner">
             
             <div class="typewriter">
@@ -69,5 +76,10 @@
                 }
             }
         }
+
+        const btn = document.querySelector('.btn-toggle');
+        btn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');  
+        })
     </script>
 </html>

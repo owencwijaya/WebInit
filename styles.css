@@ -50,8 +50,9 @@
         visibility: visible !important;
         animation: 2s fadeIn !important;
         animation-fill-mode: forwards;
-        animation-delay: 2s;
+        animation-delay: 2s !important;
         visibility: visible !important;
+        display: inline;
     }
 
     @keyframes fadeIn {
@@ -101,6 +102,11 @@
         padding-bottom: 6vw !important;
     }
 
+    .timeline-pic{
+        margin-left: -5vw !important;
+        max-width: 95vw !important;
+    }
+
     
 
 }
@@ -121,7 +127,7 @@ header{
 
 .icon{
     margin-top: 20vh;
-    width: 50px;
+    width:5vw;
     height: 50px;
 }
 header h1{
@@ -302,7 +308,7 @@ footer{
 
 #inline-list ul{
     display: table;
-    margin-left: 70vw;
+    margin-left: 60vw;
     margin-top: 2.5vh;
     padding-bottom: 2.5vh;
 }
@@ -337,13 +343,13 @@ footer{
     border-radius: 10px;
     font-family: "Poppins";
     margin-bottom: 0px !important;
-    visibility: hidden;
     float: left;
     margin-top: 10vh;
     margin-right: 1vh;
     margin-left: 80%;
     min-width: 8vh;
     min-height: 8vh;
+    visibility: hidden;
 }
 
 .dropbutton:hover, .dropbutton:focus{
@@ -391,7 +397,7 @@ footer{
     display: block;
 }
 
-.timeline{
+.timeline-pic{
     max-width: 50vw;
 }
 em{
@@ -413,4 +419,44 @@ em{
 
 i{
     font-weight: bold;
+}
+
+body.dark-theme {
+    color: #eee;
+    background: #02112cf1;
+}
+body.dark-theme a {
+    color: #809fff;
+}
+
+body.dark-theme footer{
+    background: rgb(53,134,119);
+    background: linear-gradient(180deg, rgba(53,134,119,1) 0%, rgba(53,90,121,1) 100%);
+}
+
+body.dark-theme .sticky-header{
+    color: black;
+}
+
+
+
+body.dark-theme .panel{
+    background-color: rgb(53, 53, 53);
+}
+
+body.dark-theme #banner{
+    background: rgb(53,134,119);
+    background: linear-gradient(180deg, rgba(53,134,119,1) 0%, rgba(53,90,121,1) 100%);
+}
+
+body.dark-theme #inline-list{
+    background-color:#02112cf1;
+}
+
+body.dark-theme #inline-list ul li a{
+    color: white;
+}
+
+body.dark-theme #typewriter{
+    color: blue;
 }
