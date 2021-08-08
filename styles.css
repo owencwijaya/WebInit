@@ -407,6 +407,8 @@ footer {
   min-width: 8vh;
   min-height: 8vh;
   visibility: hidden;
+  animation: 4s fadeIn forwards;
+
 }
 
 #menggokil-button {
@@ -630,3 +632,4 @@ body.dark-theme .selected {
     margin: 4% 2%;
   }
 }
+
