@@ -550,12 +550,12 @@ body.dark-theme .accordion {
 }
 
 body.dark-theme .dropbutton {
-  background-color: #0c2b64f1;
+  background-color: #02112cf1;
   color: white;
 }
 
 body.dark-theme #menggokil-button {
-  background-color: #0c2b64f1;
+  background-color: #02112cf1;
   color: white;
 }
 
@@ -633,3 +633,32 @@ body.dark-theme .selected {
   }
 }
 
+.sign-up-button{
+  margin-top: 5vh;
+  border-radius: 10px;
+  min-width: 15vw;
+  background-color:white;
+  font-family: "Poppins";
+  font-weight: bold;
+  padding: 5px 20px;
+  font-size: 20px;
+  border: 3px solid white;
+}
+
+.sign-up-button:hover{
+  background-color: #02112cf1;
+  color: white;
+  border: 3px solid #02112cf1;
+}
+
+body.dark-theme .sign-up-button{
+  background-color: #02112cf1;
+  color: white;
+  border: 3px solid #02112cf1;
+}
+
+body.dark-theme .sign-up-button:hover{
+  background-color: white;
+  color: #02112cf1;
+  border: 3px solid white;
+}
