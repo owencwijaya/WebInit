@@ -696,3 +696,55 @@ body.dark-theme .sign-up-button:hover{
   margin-left: 35vw;
   border-radius: 10px;
 }
+
+
+/* MAIN EVENT */
+/* TALKSHOW */
+.talkshow-main-event .speaker-container {
+  display: flex;
+  gap: 5%;
+  padding: 2%;
+}
+.first-speaker .left-position {
+  flex-basis: 65%;
+}
+.first-speaker .right-position {
+  flex-basis: 30%;
+}
+.second-speaker .left-position {
+  flex-basis: 30%;
+}
+.second-speaker .right-position {
+  flex-basis: 65%;  
+}
+.talkshow-main-event .text-container {
+  margin: 10% 0;
+}
+.second-speaker {
+  text-align: right;
+}
+.talkshow-main-event h1 {
+  margin: auto;
+}
+/* .talkshow-main-event .img-container {
+  min-wi
+  overflow: hidden;
+} */
+.talkshow-main-event img {
+  background-color: black;
+  width: 100%;
+  border-radius: 3vh;
+  border: 2px solid black;
+  object-fit: contain;
+  box-shadow: 1.5vh 1.5vh rgb(53, 134, 119);
+}
+@media screen and (max-width: 900px) {
+  .talkshow-main-event .speaker-container {
+    flex-direction: column;
+  }
+}
+
+.yt-thumbnail {
+  border-radius: 3vh;
+  margin-bottom: 4%;
+}
