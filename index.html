@@ -11,7 +11,7 @@
 </head>
 
 <body class="">
-    <div id="inline-list" class="sticky-header fade">
+    <!-- <div id="inline-list" class="sticky-header fade">
         <img id="logo-init" src="assets/logo_init.png">
         <ul>
             <li><a class="selected" href="index.html">Home</a></li>
@@ -20,6 +20,18 @@
             <li><a class="btn-toggle"><i class="fa fa-moon-o"></i></a></li>
         </ul>
 
+    </div> -->
+
+    <div id='navbar' class="navbar fade">
+        <div class="logo">
+            <img id="logo-init" src="assets/logo_init.png">
+        </div>
+        <ul class="navbar-group">
+            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Photos</a></li>
+            <li><a class="btn-toggle"><i class="fa fa-moon-o"></i></a></li>
+        </ul>
     </div>
 
     <button onclick="testFunc()" class="dropbutton fa fa-home fa-2x"></button>
@@ -43,8 +55,10 @@
         </div>
 
         <p class="fade">Solving The Digital Talent Issues</p>
+        <button class="fade sign-up-button"
+            onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSd-lcUrgYuonRoXuQhK1DToMrE9fOOVKrWlhRcLWBTBPsaiZg/viewform';">Sign
+            Up Now!</button>
 
-        <i class="fade icon fa fa-arrow-circle-down fa-3x"></i>
     </header>
 
 
@@ -79,38 +93,116 @@
                 <p>Acara pada Pre-Event berupa acara yang berisi konten edukatif dan atraktif untuk mengenalkan dunia
                     industri digital dalam
                     bentuk video di <em>YouTube</em> dan konten di <em>Instagram</em>. </p>
+                <iframe src="https://www.youtube.com/embed/Dy4aevkeUXo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="yt-thumbnail"></iframe>
                 <button class="accordion"><em>Lifestyle Guide</em></button>
                 <div class="panel">
                     <ul>
-                        <li><em>Instagram Reels: Expectation VS Reality dalam Dunia Programming, Spill Gaji Programmer,
-                                Rekomendasi Film Tema IT</em></li>
-                        <li><em>Instagram Post: Kegiatan Programmer selain Ngoding</em></li>
-                        <li><em>Video YouTube: Programming Life di TPB ITB</em></li>
-                        <li><em>Video pernampilan band berupa 2 lagu cover dan 1 lagu jingle</em></li>
+                        <li><em>Instagram Reels:</em>
+                            <ul>
+                                <li><a href="https://www.instagram.com/reel/CSW2O6SFkO2/?utm_source=ig_web_copy_link">Expectation
+                                        VS Reality In Programming Pt.1</a></li>
+                                <li><a href="https://www.instagram.com/reel/CSZR-eTlKkO/">Gaji Programmer di
+                                        Indonesia</a></li>
+                                <li><a href="https://www.instagram.com/reel/CSb2ITelyBg/">Expectation vs. Reality in
+                                        Programming Pt. 2</a></li>
+                                <li><a href="https://www.instagram.com/reel/CSeaK99l51Q/">Rekomendasi Film IT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.youtube.com/watch?v=Dy4aevkeUXo"><em>Video YouTube: Programming Life di
+                                    ITB</em></a></li>
                     </ul>
                 </div>
 
                 <button class="accordion"><em>Hardskills Media</em></button>
                 <div class="panel">
                     <ul>
-                        <li><em>Podcast: First Step to Become a Programmer</em></li>
-                        <li><em>Instagram: Pengenalan Python, Common Mistakes, Tips n' </em></li>
-                        <li><em>YouTube: Basic Terms in Programming</em></li>
+                        <li><a href="https://youtu.be/8zgQ7cIcjlQ"><em>Podcast: InitiaTalk: Ep. 1 - First Step to Become
+                                    Programmer</em></a></li>
+                        <li><em>Instagram</em></li>
+                        <ul>
+                            <li>Pengenalan Python</li>
+                            <li>Common mistakes in programming</li>
+                            <li>Tips and Tricks saat programming</li>
+                        </ul>
+                        <li><a href="https://youtu.be/XLgqqhroGy4"><em>YouTube: Basic Terms in Programming<br></em></a>
+                        </li>
                     </ul>
                 </div>
 
                 <button class="accordion"><em>Softskills Media</em></button>
                 <div class="panel">
-                    <p><em>YouTube: How to "Survive" in the Online University Life</em></p>
+                    <p><em>Podcast: InitiaTalk: Ep. 2 - Surviving in Online Uni-life</em></p>
                 </div>
             </div>
 
             <div id="main-event" style="margin-bottom: 100px;">
 
                 <h2 style="text-align: left">Main Event</h2>
-                <p>Main event dari aksi angkatan INIT 2021 berupa acara talkshow interaktif berjudul "The Initiator:
-                    Dive Into Digital and Tech Industry" dengan pembicara expert yang terampil di bidangnya. Sabtu, 14
-                    Agustus 2021 18.30-21.30.</p>
+                <p>Pernah bertanya-tanya tentang bagaimana dan mengapa Anda harus menjadi bagian dari talenta teknologi
+                    yang diantisipasi di masa depan?
+                    Pada tanggal 14 Agustus, tandai kalender Anda dan bersiaplah untuk mengisi diri Anda dengan wawasan
+                    baru dari orang-orang paling cerdas di bidang ini!
+                    Selain itu, Anda akan mendapatkan E-Certificate sebagai hadiah untuk bergabung dengan kami dalam
+                    memecahkan masalah talenta digital!</p>
+                <p>Jadilah bagian dari kami untuk menjadi Initiator perubahan dan menjadi bagian dari salah satu talenta digital Indonesia di masa depan. 
+                    Persiapkan dirimu dengan mengikuti talkshow interaktif bersama pembicara berpengalaman yang bekerja di perusahaan multinasional 
+                    pada Sabtu, 14 Agustus 2021 pukul 18.30 WIB dengan judul "Experiencing Work at Big Tech Company".</p>
+                <p><i>Special offer:</i> untuk pendaftar talkshow akan mendapatkan <i>free full access</i> ke
+                    <i>bootcamp</i> pengenalan Python</p>
+
+                <div class="talkshow-main-event">
+                    
+                    <div class="speaker-container first-speaker">
+                        <div class="left-position">
+                            <div class="text-container patricia">
+                                <h1>Patricia Marsha Adara</h1>
+                                <h3>Account Manager Large Customer Sales, Google Indonesia</h3>
+                                <p>2019 - Current</p>
+                                <h3>Account Manager, Treasury and Trade Solutions, CITIBANK INDONESIA</h3>
+                                <p>2015 - 2018</p>
+                            </div>
+                        </div>
+                        <div class="right-position">
+                            <div class="img-container img-1">
+                                <img src=".\assets\speaker1-photo.jpg" alt="Patricia Marsha Adara">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker-container second-speaker">
+                        <div class="left-position">
+                            <div class="img-container img-2">
+                                <img src=".\assets\speaker2-photo.jpeg" alt="Sabrina Lioe">
+                            </div>
+                        </div>
+                        <div class="right-position sabrina">
+                            <div class="text-container">
+                                <h1>Sabrina Lioe</h1>
+                                <h3>COO Office, Sea Group</h3>
+                                <p>Aug 2020 - Current</p>
+                                <h3>Sales Operations Specialist, Xiaomi Indonesia</h3>
+                                <p>Apr 2020 - Jul 2020</p>
+                                <h3>Project Specialist, Boston Consulting Group</h3>
+                                <p>Jun 2019 - Feb 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="accordion"><em>Syarat Pendaftaran</em></button>
+                <div class="panel">
+                    <ul>
+                        <li><i>Follow</i> Instagram <a href = "https://www.instagram.com/theinitiator21">@theinitiator21</a>
+                        dan <a href = "https://www.instagram.com/cornerstone.education/">@cornerstone.education</a></li>
+                        <li><i>Share</i> <a href = "bit.ly/PosterTalkShowInit" style = "font-weight: bold">poster ini</a> ke story IG kalian,
+                        jangan lupa untuk tag @theinitiator21 dan @cornerstone.education</li>
+                        <li><i>Like</i> <a href = "https://www.instagram.com/p/CSWeg0nFZbm/?utm_source=ig_web_copy_link" style = "font-weight: bold">post ini</a>
+                        dan tag 3 teman kalian di kolom komentar</li>
+                    </ul>
+                </div>
 
             </div>
 
@@ -120,18 +212,12 @@
                 <p>Acara pelatihan berbentuk bootcamp dengan total 3 pertemuan. Untuk setiap pertemuan, terdapat 2 jam
                     untuk mengenalkan bahasa pemrograman Python kepada masyarakat,
                     terutama mahasiswa TPB untuk mempersiapkan mata kuliah Pengenalan Komputasi.</p>
-                <p> Pengenalan Python ini bertujuan untuk mengajarkan dasar-dasar Python dan cara berpikir komputasional
-                    menggunakan Python. Bootcamp ini akan berlangsung selama 3 hari,
-                    yaitu pada tanggal 13, 15, dan 16 Agustus. Materi yang akan disampaikan pada bootcamp pengenalan
-                    Python ini adalah data structure (int, str, list), variabel, operator (+, -, hingga modulo), I/O,
-                    control flow (if-else statement, while loop, for loop), dan fungsi di Python. Akan ada soal-soal
-                    permasalahan yang akan membantu kalian memahami Python serta
-                    mengembangkan <i>computational thinking</i> kalian.</p>
-
                 <button class="accordion">Pendaftaran</button>
                 <div class="panel">
                     <ol>
-                        <li>Buka link <a href=https://bit.ly/DaftarBootcampPython>bit.ly/DaftarBootcampPython</a> dan
+                        <li>Buka link <a
+                                href=http://bit.ly/TheInitiatorRegistration>http://bit.ly/TheInitiatorRegistration</a>
+                            dan
                             isi formnya</li>
                         <li>Jangan lupa untuk mengisi form secara jujur</li>
                         <li><i>Follow </i>Instagram <a
@@ -160,45 +246,70 @@
                     </ul>
                 </div>
 
-                <button class="accordion">Mentor</button>
+                <button class="accordion">Fasilitas</button>
                 <div class="panel">
-                    <ul style="display: inline;float: left;">
-                        <li>Adiyansa Prasetya Wicaksana</li>
-                        <li>Amar Fadil</li>
-                        <li>Dimas Shidqi Parikesit</li>
-                        <li>Fachry Dennis Heraldi</li>
-                        <li>Farhandika Zahrir Mufti Guenia</li>
-                        <li>Fawwaz Anugrah Wiradhika Dharmasatya</li>
-                        <li>Gede Prasidha Bhawarnawa</li>
-                        <li>Hana Fathiyah</li>
-
-                    </ul>
-                    <ul style="display: inline;float: right;margin-right:8vh">
-                        <li>Marcellus Michael Herman Kahari</li>
-                        <li>Maria Khelli</li>
-                        <li>Ng Kyle</li>
-                        <li>Rayhan Kinan Muhannad</li>
-                        <li>Riandy Hasan</li>
-                        <li>Rio Alexander Audino</li>
-                        <li>Aditya Prawira Nugroho</li>
+                    <ul>
+                        <li><i>Live Class from YouTube streaming</i></li>
+                        <li><i>Programming exerices & solutions</i></li>
+                        <li><i>Class materials</i></li>
                     </ul>
                 </div>
 
                 <button class="accordion">Timeline</button>
                 <div class="panel">
-                    <ol>
-                        <li>Bootcamp Day 1 (13 Agustus 2021><br>Time: 13.30 - 15.30 WIB</li>
+                    <ul>
+                        <li>Bootcamp Day 1 (13 Agustus 2021)<br>Time: 13.30 - 15.30 WIB</li>
                         <li>Bootcamp Day 2 (15 Agustus 2021)<br>Time: 10.00 - 12.00 WIB</li>
                         <li>Bootcamp Day 3 (16 Agustus 2021)<br>Time: 13.00 - 15.00 WIB</li>
-                    </ol>
+                    </ul>
                 </div>
 
             </div>
-
-
-
+            <div id="medpar">
+                <h2>In association with</h2>
+                <div class="medpar-data">
+                    <div class="medpar-row">
+                        
+                        <div class="medpar-item color1">
+                            <img src="assets/medpar/Berita Kota Bandung.png" alt="Berita Kota Bandung" />
+                        </div>
+                        <div class="medpar-item">
+                            <img src="assets/medpar/EVENT KAMPUS (KOSONGAN).png" alt="Event Kampus" />
+                        </div>
+                        <div class="medpar-item">
+                            <img src="assets/medpar/Info Event Mahasiswa Indonesia.png" alt="Info Mahasiswa Indonesia" />
+                        </div>
+                        <div class="medpar-item color2">
+                            <img src="assets/medpar/LOGO @eventcampus.png" alt="Event Kampus" />
+                        </div>
+                    </div>
+                    <div class="medpar-row">
+                        <div class="medpar-item"><img src="assets/medpar/bandung creative media.jpg" alt="Bandung Creative Media"></div>
+                        <div class="medpar-item"><img src="assets/medpar/Cornerstone-logo-final.png" alt="Cornerstone"></div>
+                        <div class="medpar-item"><img src="assets/medpar/LOGO ACARA KAMPUS-2.png" alt="Acara Kampus"></div>
+                        <div class="medpar-item"><img src="assets/medpar/logo seribu manfaat.png" alt="Seribu Manfaat"></div>
+                    </div>
+                    <div class="medpar-row">
+                        <div class="medpar-item"><img src="assets/medpar/Point Kampus.png" alt="Point Kampus"></div>
+                        <div class="medpar-item"><img src="assets/medpar/Logo Acara Mahasiswa.png" alt="Acara Mahasiswa"></div>
+                        <div class="medpar-item"><img src="assets/medpar/logo eventcampus.co.png" alt="Event Campus CO"></div>
+                        <div class="medpar-item"><img src="assets/medpar/Logo EventEvent_.jpg" alt="Event Event"></div>
+                    </div>
+                    <div class="medpar-row long">
+                        <div class="medpar-item"><img src="assets/medpar/DailySocial.png" alt="DailySocial.id"></div>
+                        <div class="medpar-item"><img src="assets/medpar/Logo_SkillUp.png" alt="Skill Up"></div>
+                    </div>
+                    <div class="medpar-row long">
+                        <div class="medpar-item"><img src="assets/medpar/ruang mahasiswa.png" alt="Ruang Mahasiswa"></div>
+                        <div class="medpar-item"><img src="assets/medpar/logoinfobandung.png" alt="Info Bandung"></div>
+                    </div>
+                    <div class="medpar-row long">
+                        <div class="medpar-item"><img src="assets/medpar/LogoEB1.png" alt="Event Bandung"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
 
     </main>
 
@@ -206,14 +317,25 @@
 
         <p>Check us out on:</p>
         <div class="socmed-images">
-            <a class="fa fa-instagram fa-3x" onclick="window.open('https://www.instagram.com/theinitiator21/')">&nbsp;</a>
+            <!-- <a class="fa fa-instagram fa-3x" onclick="window.open('https://www.instagram.com/theinitiator21/')">&nbsp;</a> -->
+            <a class="fa fa-instagram fa-3x" target="_blank" href="https://www.instagram.com/theinitiator21/"></a>
         </div>
         <div class="socmed-images">
-            <a class="fa fa-youtube-play fa-3x"
-                onclick="window.open('https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ')">&nbsp;</a>
+            <!-- <a class="fa fa-youtube-play fa-3x"
+                onclick="window.open('https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ')">&nbsp;</a> -->
+            <a class="fa fa-youtube-play fa-3x" target="_blank"
+                href="https://youtube.com/channel/UCwW5GoUWhkb8418SpN6JjxQ"></a>
         </div>
 
+        <ul class="footer-contact" style="list-style-type: none">
+            <li>Contact </li>
+            <li>Vixell - 081914324626</li>
+            <li>Rachita - 082211148384</li>
+            <li>Vincent - 082118846539</li>
+        </ul>
         <p>© 2021 Angkatan INIT</p>
+
+
     </footer>
 </body>
 
