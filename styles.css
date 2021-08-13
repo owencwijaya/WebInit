@@ -785,21 +785,24 @@ body.dark-theme .color2 {
 
   .img-2{
     width: 40vw;
+    margin-left: 40vw;
   }
 
   .text-container{
     font-size: 10px;
   }
 
-  .patricia, .sabrina{
+  .patricia{
     width: 30vw;
     float: right;
     display: inline;
   }
   .sabrina{
     float: right;
-    margin-top: -45vh;
-    margin-left: 47vw;
+    margin-top: -40vh;
+    margin-left: 0vw;
+    text-align: right;
+    margin-right: 40vw;
   }
   .second-speaker{
     text-align: left;
@@ -812,4 +815,19 @@ body.dark-theme .color2 {
 .yt-thumbnail {
   border-radius: 3vh;
   margin-bottom: 4%;
+}
+
+.footer-contact{
+  margin-left: -3vw;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-contact li {
+    font-size: 12px;
+    margin-left: -5vw !important;
+  }
+
+  .purpose-div{
+    font-size: 12px;
+  }
 }
