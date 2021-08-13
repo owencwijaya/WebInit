@@ -777,6 +777,36 @@ body.dark-theme .color2 {
   .talkshow-main-event .speaker-container {
     flex-direction: column;
   }
+
+  .img-1{
+    width: 40vw;
+    margin-top: -45vh;
+  }
+
+  .img-2{
+    width: 40vw;
+  }
+
+  .text-container{
+    font-size: 10px;
+  }
+
+  .patricia, .sabrina{
+    width: 30vw;
+    float: right;
+    display: inline;
+  }
+  .sabrina{
+    float: right;
+    margin-top: -45vh;
+    margin-left: 47vw;
+  }
+  .second-speaker{
+    text-align: left;
+  }
+  .speaker-container{
+    margin-top: 20px;
+  }
 }
 
 .yt-thumbnail {
